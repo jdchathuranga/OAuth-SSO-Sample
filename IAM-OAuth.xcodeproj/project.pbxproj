@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19A87BABF41B6A4984027E69 /* Pods_IAM_OAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4B8C3D269DAB33EDF0A8EA /* Pods_IAM_OAuth.framework */; };
 		F19B48F4200E022000E4F0F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19B48F3200E022000E4F0F1 /* AppDelegate.swift */; };
-		F19B48F6200E022000E4F0F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19B48F5200E022000E4F0F1 /* ViewController.swift */; };
+		F19B48F6200E022000E4F0F1 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19B48F5200E022000E4F0F1 /* AuthViewController.swift */; };
 		F19B48F9200E022000E4F0F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19B48F7200E022000E4F0F1 /* Main.storyboard */; };
 		F19B48FB200E022000E4F0F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F19B48FA200E022000E4F0F1 /* Assets.xcassets */; };
 		F19B48FE200E022000E4F0F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19B48FC200E022000E4F0F1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		120BE687B1C03EB979AE9204 /* Pods-IAM-OAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IAM-OAuth.release.xcconfig"; path = "Pods/Target Support Files/Pods-IAM-OAuth/Pods-IAM-OAuth.release.xcconfig"; sourceTree = "<group>"; };
+		3E4B8C3D269DAB33EDF0A8EA /* Pods_IAM_OAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IAM_OAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D88A4AC9384A4938175B0FED /* Pods-IAM-OAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IAM-OAuth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IAM-OAuth/Pods-IAM-OAuth.debug.xcconfig"; sourceTree = "<group>"; };
 		F19B48F0200E022000E4F0F1 /* IAM-OAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IAM-OAuth.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19B48F3200E022000E4F0F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F19B48F5200E022000E4F0F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F19B48F5200E022000E4F0F1 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		F19B48F8200E022000E4F0F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F19B48FA200E022000E4F0F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F19B48FD200E022000E4F0F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19A87BABF41B6A4984027E69 /* Pods_IAM_OAuth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C523EEECFF5D4E95CDB5C416 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E4B8C3D269DAB33EDF0A8EA /* Pods_IAM_OAuth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD593221A36DDBB19146D226 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D88A4AC9384A4938175B0FED /* Pods-IAM-OAuth.debug.xcconfig */,
+				120BE687B1C03EB979AE9204 /* Pods-IAM-OAuth.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F19B48E7200E022000E4F0F1 = {
 			isa = PBXGroup;
 			children = (
 				F19B48F2200E022000E4F0F1 /* IAM-OAuth */,
 				F19B48F1200E022000E4F0F1 /* Products */,
+				CD593221A36DDBB19146D226 /* Pods */,
+				C523EEECFF5D4E95CDB5C416 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,7 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				F19B48F3200E022000E4F0F1 /* AppDelegate.swift */,
-				F19B48F5200E022000E4F0F1 /* ViewController.swift */,
+				F19B48F5200E022000E4F0F1 /* AuthViewController.swift */,
 				F19B48F7200E022000E4F0F1 /* Main.storyboard */,
 				F19B48FA200E022000E4F0F1 /* Assets.xcassets */,
 				F19B48FC200E022000E4F0F1 /* LaunchScreen.storyboard */,
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F19B4902200E022000E4F0F1 /* Build configuration list for PBXNativeTarget "IAM-OAuth" */;
 			buildPhases = (
+				0B2663B4BF9440B1A245DD18 /* [CP] Check Pods Manifest.lock */,
 				F19B48EC200E022000E4F0F1 /* Sources */,
 				F19B48ED200E022000E4F0F1 /* Frameworks */,
 				F19B48EE200E022000E4F0F1 /* Resources */,
+				78E10F8524DBC27DF6B8CB74 /* [CP] Embed Pods Frameworks */,
+				4CAFE9A1233BDB9D999A587C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,7 +123,7 @@
 				TargetAttributes = {
 					F19B48EF200E022000E4F0F1 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -131,12 +158,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B2663B4BF9440B1A245DD18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IAM-OAuth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CAFE9A1233BDB9D999A587C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IAM-OAuth/Pods-IAM-OAuth-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78E10F8524DBC27DF6B8CB74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IAM-OAuth/Pods-IAM-OAuth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F19B48EC200E022000E4F0F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F19B48F6200E022000E4F0F1 /* ViewController.swift in Sources */,
+				F19B48F6200E022000E4F0F1 /* AuthViewController.swift in Sources */,
 				F19B48F4200E022000E4F0F1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,13 +350,17 @@
 		};
 		F19B4903200E022000E4F0F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D88A4AC9384A4938175B0FED /* Pods-IAM-OAuth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "IAM-OAuth/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wso2.IAM-OAuth";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,13 +368,17 @@
 		};
 		F19B4904200E022000E4F0F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 120BE687B1C03EB979AE9204 /* Pods-IAM-OAuth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "IAM-OAuth/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wso2.IAM-OAuth";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
