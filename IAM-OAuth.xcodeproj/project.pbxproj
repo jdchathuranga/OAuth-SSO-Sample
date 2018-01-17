@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		19A87BABF41B6A4984027E69 /* Pods_IAM_OAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4B8C3D269DAB33EDF0A8EA /* Pods_IAM_OAuth.framework */; };
+		F1968FA0200F662100103756 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1968F9F200F662100103756 /* HomeViewController.swift */; };
 		F19B48F4200E022000E4F0F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19B48F3200E022000E4F0F1 /* AppDelegate.swift */; };
 		F19B48F6200E022000E4F0F1 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19B48F5200E022000E4F0F1 /* AuthViewController.swift */; };
 		F19B48F9200E022000E4F0F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19B48F7200E022000E4F0F1 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 		120BE687B1C03EB979AE9204 /* Pods-IAM-OAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IAM-OAuth.release.xcconfig"; path = "Pods/Target Support Files/Pods-IAM-OAuth/Pods-IAM-OAuth.release.xcconfig"; sourceTree = "<group>"; };
 		3E4B8C3D269DAB33EDF0A8EA /* Pods_IAM_OAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IAM_OAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D88A4AC9384A4938175B0FED /* Pods-IAM-OAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IAM-OAuth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IAM-OAuth/Pods-IAM-OAuth.debug.xcconfig"; sourceTree = "<group>"; };
+		F1968F9F200F662100103756 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F19B48F0200E022000E4F0F1 /* IAM-OAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IAM-OAuth.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19B48F3200E022000E4F0F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F19B48F5200E022000E4F0F1 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +28,7 @@
 		F19B48FA200E022000E4F0F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F19B48FD200E022000E4F0F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F19B48FF200E022000E4F0F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F19B4905200E348700E4F0F1 /* IAM-OAuth-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IAM-OAuth-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 				F19B48FA200E022000E4F0F1 /* Assets.xcassets */,
 				F19B48FC200E022000E4F0F1 /* LaunchScreen.storyboard */,
 				F19B48FF200E022000E4F0F1 /* Info.plist */,
+				F19B4905200E348700E4F0F1 /* IAM-OAuth-Bridging-Header.h */,
+				F1968F9F200F662100103756 /* HomeViewController.swift */,
 			);
 			path = "IAM-OAuth";
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 				TargetAttributes = {
 					F19B48EF200E022000E4F0F1 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -198,9 +204,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IAM-OAuth/Pods-IAM-OAuth-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppAuth.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -216,6 +225,7 @@
 			files = (
 				F19B48F6200E022000E4F0F1 /* AuthViewController.swift in Sources */,
 				F19B48F4200E022000E4F0F1 /* AppDelegate.swift in Sources */,
+				F1968FA0200F662100103756 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +363,7 @@
 			baseConfigurationReference = D88A4AC9384A4938175B0FED /* Pods-IAM-OAuth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "IAM-OAuth/Info.plist";
@@ -361,6 +372,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wso2.IAM-OAuth";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "IAM-OAuth/IAM-OAuth-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -371,6 +384,7 @@
 			baseConfigurationReference = 120BE687B1C03EB979AE9204 /* Pods-IAM-OAuth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "IAM-OAuth/Info.plist";
@@ -379,6 +393,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wso2.IAM-OAuth";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "IAM-OAuth/IAM-OAuth-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

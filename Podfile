@@ -6,5 +6,6 @@ target 'IAM-OAuth' do
   use_frameworks!
 
   # Pods for IAM-OAuth
+  pod 'AppAuth'
 
 end
