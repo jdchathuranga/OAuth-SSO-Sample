@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="-1226" y="6"/>
         </scene>
-        <!--Auth View Controller-->
+        <!--Auth View Controller2-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="AuthViewController" customModule="IAM_OAuth" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AuthViewController2" customModule="IAM_OAuth_02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,7 +48,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.29803921570000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.4823529412" green="0.1215686275" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wvq-2w-AeY" secondAttribute="bottom" constant="75" id="G4l-Eh-Vuf"/>
                             <constraint firstItem="Wvq-2w-AeY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xYG-y1-ORQ"/>
@@ -76,7 +76,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.29803921568627451" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.4823529411764706" green="0.12156862745098039" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="wKE-Li-Zz9" firstAttribute="trailing" secondItem="g09-jF-yLT" secondAttribute="trailing" constant="16" id="0v5-PW-t2t"/>
                             <constraint firstItem="g09-jF-yLT" firstAttribute="top" secondItem="wKE-Li-Zz9" secondAttribute="top" id="R1Y-7k-oOg"/>

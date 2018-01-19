@@ -10,18 +10,17 @@ import UIKit
 import AppAuth
 
 
-class AuthViewController: UIViewController, OIDAuthStateErrorDelegate, OIDAuthStateChangeDelegate {
+class AuthViewController2: UIViewController {
 
-    let clientId = "dGeebJ3zFegVZEUc4Tk5kjpeu9ka"
-    let clientSecret = "_EPk7q4KcDiAwhMfxlvFcHoVmoga"
+    let clientId = "f1l5hvXVOcGNQNaJP4lPAjVJGw0a"
+    let clientSecret = "OU4a2N4g0UhUxbCp12tzM92Qpj0a"
     
-    let redirectURI = URL(string:"com.wso2://oauth")
+    let redirectURI = URL(string:"com.wso2app2://oauth")
     
     let authURL = URL(string: "https://www.wso2oauth.com:9443/oauth2/authorize")
     let tokenURL = URL(string: "https://www.wso2oauth.com:9443/oauth2/token")
     let registerURL = URL(string:"https://www.wso2oauth.com:9443/identity/connect/register")
     
-//    This confirms NSCoding, so archive and store.
     var oidAuthState:OIDAuthState?
     
     override func viewDidLoad() {
@@ -29,6 +28,8 @@ class AuthViewController: UIViewController, OIDAuthStateErrorDelegate, OIDAuthSt
         // Do any additional setup after loading the view, typically from a nib.
         self.loadOidState()
     }
+    
+//    123, 31, 162
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -36,9 +37,7 @@ class AuthViewController: UIViewController, OIDAuthStateErrorDelegate, OIDAuthSt
     }
 
     @IBAction func loginWithOAuthButtonTapped(_ sender: Any) {
-
         authenticatePKCE()
-        
     }
     
     func authenticatePKCE() {
@@ -60,78 +59,42 @@ class AuthViewController: UIViewController, OIDAuthStateErrorDelegate, OIDAuthSt
                                                   codeChallengeMethod: OIDOAuthorizationRequestCodeChallengeMethodS256,
                                                   additionalParameters: nil)
         
-        deligate.currentAuthorizationFlow = OIDAuthState.authState(byPresenting: authrequest, presenting: self, callback: { (oidAuthStateResponse, error) in
+        deligate.currentAuthorizationFlow = OIDAuthState.authState(byPresenting: authrequest, presenting: self, callback: { (oidAuthState, error) in
             
             if let _ = error {
                 print("Authentication Failed..")
-                self.oidAuthState = nil
             }
             
-            if let authState = oidAuthStateResponse {
+            if let authState = oidAuthState {
                 print("Authentication Success - Auth State: \(authState)")
-                
-                self.updateAuthState(authState: authState)
+                self.oidAuthState = authState
+                self.saveOidState()
                 self.loginToTheApp()
             }
             
         })
     }
     
-    func saveOidState(authState:OIDAuthState) {
+    func saveOidState() {
         
         if let state = oidAuthState {
-            
-            if (state == authState) {
-                return
-            }
-            
             let archivedState = NSKeyedArchiver.archivedData(withRootObject: state)
             UserDefaults.standard.set(archivedState, forKey: "com.wso2.oidauthstate")
             UserDefaults.standard.synchronize()
-        } else {
-            UserDefaults.standard.removeObject(forKey: "com.wso2.oidauthstate")
         }
+        
     }
     
     func loadOidState() {
         if let archivedState = UserDefaults.standard.value(forKey: "com.wso2.oidauthstate") as? Data {
             if let state = NSKeyedUnarchiver.unarchiveObject(with: archivedState) as? OIDAuthState {
-                self.updateAuthState(authState: state)
+                self.oidAuthState = state
             }
             
         }
     }
     
-    func updateAuthState(authState:OIDAuthState) {
-        self.oidAuthState = authState
-        self.oidAuthState?.errorDelegate = self
-        self.oidAuthState?.stateChangeDelegate = self
-        self.saveOidState(authState: authState)
-    }
-    
-    func didChange(_ state: OIDAuthState) {
-        self.updateAuthState(authState: state)
-    }
-    
-    func authState(_ state: OIDAuthState, didEncounterAuthorizationError error: Error) {
-        print("OID State Error \(error)")
-    }
-    
-    
     func loginToTheApp() {
-        
-        
-//        If you need to refresh token.
-//
-//        let lastToken = oidAuthState?.lastTokenResponse?.accessToken
-//
-//        oidAuthState?.setNeedsTokenRefresh()
-//
-//        oidAuthState?.performAction(freshTokens: { (accessToken, idToken, error) in
-//
-//        })
-        
-        
         let homeViewController = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController")
         self.navigationController?.pushViewController(homeViewController!, animated: true)
     }

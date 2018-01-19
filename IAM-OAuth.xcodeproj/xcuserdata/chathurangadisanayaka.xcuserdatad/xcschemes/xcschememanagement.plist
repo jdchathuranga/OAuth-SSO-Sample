@@ -4,10 +4,33 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>IAM-OAuth-02.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>IAM-OAuth.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>F1968FA120108E9100103756</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F1968FB420108EFC00103756</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F19B48EF200E022000E4F0F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
