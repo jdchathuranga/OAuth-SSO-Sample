@@ -19,6 +19,8 @@ class AuthViewController: UIViewController, OIDAuthStateErrorDelegate, OIDAuthSt
     
     let authURL = URL(string: "https://www.wso2oauth.com:9443/oauth2/authorize")
     let tokenURL = URL(string: "https://www.wso2oauth.com:9443/oauth2/token")
+    
+//    if using DCR.
     let registerURL = URL(string:"https://www.wso2oauth.com:9443/identity/connect/register")
     
 //    This confirms NSCoding, so archive and store.
@@ -121,7 +123,7 @@ class AuthViewController: UIViewController, OIDAuthStateErrorDelegate, OIDAuthSt
     func loginToTheApp() {
         
         
-//        If you need to refresh token.
+//        If you need to refresh the token.
 //
 //        let lastToken = oidAuthState?.lastTokenResponse?.accessToken
 //

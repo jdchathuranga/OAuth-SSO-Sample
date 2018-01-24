@@ -28,8 +28,6 @@ class AuthViewController2: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.loadOidState()
     }
-    
-//    123, 31, 162
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -73,6 +71,7 @@ class AuthViewController2: UIViewController {
             }
             
         })
+    
     }
     
     func saveOidState() {

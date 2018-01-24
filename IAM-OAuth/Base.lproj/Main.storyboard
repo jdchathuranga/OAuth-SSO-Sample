@@ -34,13 +34,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wvq-2w-AeY">
-                                <rect key="frame" x="87.5" y="562" width="200" height="30"/>
+                                <rect key="frame" x="68.5" y="562" width="238" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="8l4-in-LxE"/>
                                     <constraint firstAttribute="height" constant="30" id="WQg-up-emn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="22"/>
-                                <state key="normal" title="Login with OAuth">
+                                <state key="normal" title="Login with WSO2 Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -62,9 +61,36 @@
             <point key="canvasLocation" x="-385" y="6"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="vBE-pS-aL0">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="3LD-MG-IyO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IYU-u4-8t5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carpooling" translatesAutoresizingMaskIntoConstraints="NO" id="dxP-KR-b8c">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.13903829455375671" green="0.19940444827079773" blue="0.24111920595169067" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dxP-KR-b8c" firstAttribute="leading" secondItem="Yjo-IR-Iao" secondAttribute="leading" id="PaR-WL-Ij9"/>
+                            <constraint firstItem="dxP-KR-b8c" firstAttribute="bottom" secondItem="Yjo-IR-Iao" secondAttribute="bottom" id="VVC-6R-UxD"/>
+                            <constraint firstItem="dxP-KR-b8c" firstAttribute="top" secondItem="IYU-u4-8t5" secondAttribute="top" id="hMS-hn-kLr"/>
+                            <constraint firstItem="dxP-KR-b8c" firstAttribute="trailing" secondItem="Yjo-IR-Iao" secondAttribute="trailing" id="myz-Eh-sZG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yjo-IR-Iao"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4CF-kd-o8o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="344.80000000000001" y="14.842578710644679"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="KFL-me-bvQ">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="c6i-7U-AFH" sceneMemberID="viewController">
+                <viewController id="c6i-7U-AFH" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WKF-t0-piD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,7 +114,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mcK-c7-Ybx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="340" y="2.2488755622188905"/>
+            <point key="canvasLocation" x="985" y="15"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="carpooling" width="924" height="1244"/>
+    </resources>
 </document>

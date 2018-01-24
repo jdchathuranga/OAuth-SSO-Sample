@@ -30,11 +30,11 @@
 		D88A4AC9384A4938175B0FED /* Pods-IAM-OAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IAM-OAuth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IAM-OAuth/Pods-IAM-OAuth.debug.xcconfig"; sourceTree = "<group>"; };
 		F1968F9F200F662100103756 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F1968FB320108E9200103756 /* IAM-OAuth copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "IAM-OAuth copy-Info.plist"; path = "/Users/chathurangadisanayaka/Documents/Source-Code/iam-demo-app-ios/IAM-OAuth/IAM-OAuth copy-Info.plist"; sourceTree = "<absolute>"; };
-		F1968FC520108EFC00103756 /* IAM-OAuth-02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IAM-OAuth-02.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1968FC520108EFC00103756 /* People HR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "People HR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1968FC620108EFC00103756 /* IAM-OAuth copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "IAM-OAuth copy2-Info.plist"; path = "/Users/chathurangadisanayaka/Documents/Source-Code/iam-demo-app-ios/IAM-OAuth/IAM-OAuth copy2-Info.plist"; sourceTree = "<absolute>"; };
 		F1968FC720108F4B00103756 /* AuthViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController2.swift; sourceTree = "<group>"; };
 		F1968FCB2010905D00103756 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main2.storyboard; sourceTree = "<group>"; };
-		F19B48F0200E022000E4F0F1 /* IAM-OAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IAM-OAuth.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F19B48F0200E022000E4F0F1 /* Carpooling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carpooling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19B48F3200E022000E4F0F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F19B48F5200E022000E4F0F1 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		F19B48F8200E022000E4F0F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -96,8 +96,8 @@
 		F19B48F1200E022000E4F0F1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F19B48F0200E022000E4F0F1 /* IAM-OAuth.app */,
-				F1968FC520108EFC00103756 /* IAM-OAuth-02.app */,
+				F19B48F0200E022000E4F0F1 /* Carpooling.app */,
+				F1968FC520108EFC00103756 /* People HR.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,9 +122,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F1968FB420108EFC00103756 /* IAM-OAuth-02 */ = {
+		F1968FB420108EFC00103756 /* People HR */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F1968FC220108EFC00103756 /* Build configuration list for PBXNativeTarget "IAM-OAuth-02" */;
+			buildConfigurationList = F1968FC220108EFC00103756 /* Build configuration list for PBXNativeTarget "People HR" */;
 			buildPhases = (
 				F1968FB520108EFC00103756 /* [CP] Check Pods Manifest.lock */,
 				F1968FB620108EFC00103756 /* Sources */,
@@ -137,14 +137,14 @@
 			);
 			dependencies = (
 			);
-			name = "IAM-OAuth-02";
+			name = "People HR";
 			productName = "IAM-OAuth";
-			productReference = F1968FC520108EFC00103756 /* IAM-OAuth-02.app */;
+			productReference = F1968FC520108EFC00103756 /* People HR.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F19B48EF200E022000E4F0F1 /* IAM-OAuth */ = {
+		F19B48EF200E022000E4F0F1 /* Carpooling */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F19B4902200E022000E4F0F1 /* Build configuration list for PBXNativeTarget "IAM-OAuth" */;
+			buildConfigurationList = F19B4902200E022000E4F0F1 /* Build configuration list for PBXNativeTarget "Carpooling" */;
 			buildPhases = (
 				0B2663B4BF9440B1A245DD18 /* [CP] Check Pods Manifest.lock */,
 				F19B48EC200E022000E4F0F1 /* Sources */,
@@ -157,9 +157,9 @@
 			);
 			dependencies = (
 			);
-			name = "IAM-OAuth";
+			name = Carpooling;
 			productName = "IAM-OAuth";
-			productReference = F19B48F0200E022000E4F0F1 /* IAM-OAuth.app */;
+			productReference = F19B48F0200E022000E4F0F1 /* Carpooling.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -195,8 +195,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F19B48EF200E022000E4F0F1 /* IAM-OAuth */,
-				F1968FB420108EFC00103756 /* IAM-OAuth-02 */,
+				F19B48EF200E022000E4F0F1 /* Carpooling */,
+				F1968FB420108EFC00103756 /* People HR */,
 			);
 		};
 /* End PBXProject section */
@@ -385,7 +385,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D88A4AC9384A4938175B0FED /* Pods-IAM-OAuth.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-hr";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
@@ -406,7 +406,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 120BE687B1C03EB979AE9204 /* Pods-IAM-OAuth.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-hr";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
@@ -533,7 +533,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D88A4AC9384A4938175B0FED /* Pods-IAM-OAuth.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-car";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
@@ -554,7 +555,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 120BE687B1C03EB979AE9204 /* Pods-IAM-OAuth.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-car";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
@@ -573,7 +575,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F1968FC220108EFC00103756 /* Build configuration list for PBXNativeTarget "IAM-OAuth-02" */ = {
+		F1968FC220108EFC00103756 /* Build configuration list for PBXNativeTarget "People HR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F1968FC320108EFC00103756 /* Debug */,
@@ -591,7 +593,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F19B4902200E022000E4F0F1 /* Build configuration list for PBXNativeTarget "IAM-OAuth" */ = {
+		F19B4902200E022000E4F0F1 /* Build configuration list for PBXNativeTarget "Carpooling" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F19B4903200E022000E4F0F1 /* Debug */,
